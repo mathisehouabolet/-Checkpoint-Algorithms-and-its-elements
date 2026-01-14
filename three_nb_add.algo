@@ -1,0 +1,29 @@
+
+Variable
+    c : caractère
+    nbCaractere ← 0
+    nbMot ← 1
+    nbVoyelle ← 0
+
+Début
+    Lire c
+
+    Tant que c ≠ '.' faire
+        nbCaractere ← nbCaractere + 1
+
+        Si c = ' ' alors
+            nbMot ← nbMot + 1
+        FinSi
+
+        Si c ∈ {'a','e','i','o','u','y','A','E','I','O','U','Y'} alors
+            nbVoyelle ← nbVoyelle + 1
+        FinSi
+
+        Lire c
+    FinTantQue
+
+    Afficher nbCaractere
+    Afficher nbMot
+    Afficher nbVoyelle
+Fin
+
